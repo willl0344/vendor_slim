@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
+# Omni Apps
+PRODUCT_PACKAGES += \
+    OmniSwitch
+
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
