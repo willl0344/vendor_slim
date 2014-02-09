@@ -66,6 +66,11 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
+# Screen recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 # Omni Apps
 PRODUCT_PACKAGES += \
     OmniSwitch
