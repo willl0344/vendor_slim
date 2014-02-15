@@ -84,6 +84,12 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf
 
+
+# Screen recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     SlimCenter \
