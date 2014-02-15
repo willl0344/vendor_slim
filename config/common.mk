@@ -61,6 +61,7 @@ SUPERUSER_EMBEDDED := true
 # Required packages
 PRODUCT_PACKAGES += \
     Camera \
+    CellBroadcastReceiver \
     Development \
     SpareParts \
     Superuser \
@@ -135,10 +136,10 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Versioning System
-# KitKat SlimKat beta releases
+# KitKat SlimKat stable releases
 PRODUCT_VERSION_MAJOR = 4.4.2
 PRODUCT_VERSION_MINOR = build
-PRODUCT_VERSION_MAINTENANCE = 2.5.RC1
+PRODUCT_VERSION_MAINTENANCE = 3
 ifdef SLIM_BUILD_EXTRA
     SLIM_POSTFIX := -$(SLIM_BUILD_EXTRA)
 endif
