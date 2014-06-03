@@ -1,10 +1,17 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
+ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=android-google
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
@@ -95,7 +102,17 @@ PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    tune2fs
+    tune2fs \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegadec \
+    libstagefright_soft_ffmpegvdec \
+    libFFmpegExtractor \
+    libnamparser
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
@@ -135,10 +152,10 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Versioning System
-# KitKat SlimKat stable releases
+# KitKat SlimKat freeze code
 PRODUCT_VERSION_MAJOR = 4.4.2
 PRODUCT_VERSION_MINOR = build
-PRODUCT_VERSION_MAINTENANCE = 3
+PRODUCT_VERSION_MAINTENANCE = 5.6
 ifdef SLIM_BUILD_EXTRA
     SLIM_POSTFIX := -$(SLIM_BUILD_EXTRA)
 endif
