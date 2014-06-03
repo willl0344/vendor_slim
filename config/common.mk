@@ -71,7 +71,8 @@ PRODUCT_PACKAGES += \
 
 # Omni Apps
 PRODUCT_PACKAGES += \
-    OmniSwitch
+    OmniSwitch \
+    Launcher3
 
 # Optional packages
 PRODUCT_PACKAGES += \
