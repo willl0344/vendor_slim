@@ -77,6 +77,9 @@ PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/media/audio/notifications/S_Whistle.ogg:system/media/audio/notifications/S_Whistle.ogg \
     vendor/slim/prebuilt/common/media/audio/ringtones/Basic_bell.ogg:system/media/audio/ringtones/Basic_bell.ogg
 
+PRODUCT_COPY_FILES += \
+    vendor/slim/prebuilt/common/add_to_buildprop.sh:system/add_to_buildprop.sh
+
 # Workaround for NovaLauncher zipalign fails
 PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
