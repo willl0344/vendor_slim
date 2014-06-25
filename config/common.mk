@@ -73,6 +73,9 @@ PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/media/audio/notifications/S_Whistle.ogg:system/media/audio/notifications/S_Whistle.ogg \
     vendor/slim/prebuilt/common/media/audio/ringtones/Basic_bell.ogg:system/media/audio/ringtones/Basic_bell.ogg
 
+PRODUCT_COPY_FILES += \
+    vendor/slim/prebuilt/common/add_to_buildprop.sh:system/add_to_buildprop.sh
+
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
 
