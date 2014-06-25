@@ -67,6 +67,12 @@ PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/etc/init.d/remount_fullext4:system/etc/init.d/remount_fullext4 \
     vendor/slim/prebuilt/common/etc/init.d/sqlite_optimize:system/etc/init.d/sqlite_optimize
 
+PRODUCT_COPY_FILES += \
+    vendor/slim/prebuilt/common/media/audio/notifications/S_Flowers.ogg:system/media/audio/notifications/S_Flowers.ogg \
+    vendor/slim/prebuilt/common/media/audio/notifications/S_On_time.ogg:system/media/audio/notifications/S_On_time.ogg \
+    vendor/slim/prebuilt/common/media/audio/notifications/S_Whistle.ogg:system/media/audio/notifications/S_Whistle.ogg \
+    vendor/slim/prebuilt/common/media/audio/ringtones/Basic_bell.ogg:system/media/audio/ringtones/Basic_bell.ogg
+
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
 
