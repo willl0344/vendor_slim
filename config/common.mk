@@ -62,6 +62,15 @@ PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/slim/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+PRODUCT_COPY_FILES += \
+    vendor/slim/prebuilt/common/etc/init.d/15sensors:system/etc/init.d/15sensors \
+    vendor/slim/prebuilt/common/etc/init.d/94color:system/etc/init.d/94color \
+    vendor/slim/prebuilt/common/etc/init.d/S70darky_zipalign:system/etc/init.d/S70darky_zipalign \
+    vendor/slim/prebuilt/common/etc/init.d/net_buffer:system/etc/init.d/net_buffer \
+    vendor/slim/prebuilt/common/etc/init.d/readahead:system/etc/init.d/readahead \
+    vendor/slim/prebuilt/common/etc/init.d/remount_fullext4:system/etc/init.d/remount_fullext4 \
+    vendor/slim/prebuilt/common/etc/init.d/sqlite_optimize:system/etc/init.d/sqlite_optimize
+
 # Workaround for NovaLauncher zipalign fails
 PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
