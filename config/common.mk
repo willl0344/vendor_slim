@@ -80,6 +80,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/add_to_buildprop.sh:system/add_to_buildprop.sh
 
+PRODUCT_COPY_FILES += \
+    vendor/slim/prebuilt/common/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
+
 # Workaround for NovaLauncher zipalign fails
 PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
